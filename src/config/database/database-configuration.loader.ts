@@ -7,5 +7,6 @@ export default registerAs('typeorm', () => ({
   username: process.env.TYPEORM_USERNAME,
   password: process.env.TYPEORM_PASSWORD,
   synchronize: process.env.TYPEORM_SYNCHRONIZE,
+  schema: process.env.TYPEORM_SCHEMA,
   logging: process.env.TYPEORM_LOGGING,
 }));

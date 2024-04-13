@@ -32,6 +32,10 @@ export class NodeConfigService {
     return this.configService.get<string>('typeorm.synchronize');
   }
 
+  get schema(): string {
+    return this.configService.get<string>('typeorm.schema');
+  }
+
   get logging(): string {
     return this.configService.get<string>('typeorm.logging');
   }
